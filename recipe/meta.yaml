@@ -1,5 +1,5 @@
 {% set name = "fluprodia" %}
-{% set version = "4.1.2" %}
+{% set version = "4.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/fluprodia-{{ version }}.tar.gz
-  sha256: dbb123b07d8cf29064645688de053cefbb5d16d21f3ea62e1d7ba169a732ae57
+  sha256: 429f706545610338aa7c982f03ac5795fa91533e9c4c25dae361f5584c4f9e43
 
 build:
   noarch: python
