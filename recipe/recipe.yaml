@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: fluprodia
-  version: "4.2"
+  version: '4.3'
 
 package:
   name: ${{ name|lower }}
@@ -10,10 +10,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/fluprodia-${{ version }}.tar.gz
-  sha256: 429f706545610338aa7c982f03ac5795fa91533e9c4c25dae361f5584c4f9e43
+  sha256: 4fe8382239789b1e08ad7e5ead52bd9cccb15a935217117388073a044d007f6b
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
@@ -27,7 +27,7 @@ requirements:
     - coolprop >=6.4
     - numpy >=1.13.3
     - pint
-
+    - python-build >=1.5.0
 tests:
   - python:
       imports:
